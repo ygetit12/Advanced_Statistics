@@ -1,0 +1,121 @@
+In regression, the coefficients do not chnage when we shuffle the data
+
+In time series modelling the sequencing of the numbers is very important and has a significant effect.
+
+The causal relationship response and explaintory variables is not significant.
+
+Temporal dependence - dependency based on time
+
+
+Time series variation = Trend + seasonal + Random
+Fourth factor is cyclical which is not considered in time series modelling
+
+1. Search for the missing values
+
+Methods for dealing with the missing values
+a. Repalce the value with the previous/ next value
+b. Repalce the value with the avg of previous and next value (linear imputation)
+
+These work well when there is a trend but no or little seasonal variation
+
+c. To replace the missing values, take an average of all the values which are available (Mean imputation)
+
+d. Seaonal + linear imputation - trend as well as seasonal variation is significant.
+
+If Sept 2020 is missing. Avg of Sept 2019 and Sept 2021 will be taken as the value for missing entry.
+
+
+2. Identify the outliers
+
+3. Different models for making predictions
+
+a. Naive method
+For predicting the value for nth time interval, the value of the (n-1)th interval will be considered.
+
+b. Averaging models
+(i) Simple average - 
+(ii) Moving average
+(iii) Weighted moving average
+
+c. Exponential smoothing
+alpha is a parameter for which we choose a value between 0 and 1
+
+F(t+1) = alpha * actual(t) + (1-alpha) * forecasted(t)
+F(11) = alpha * actual (10) + (1-alpha) * forecasted (10)
+
+alpha close to 1 indicates that more weightage or preference is given to the actual values
+
+
+differencing of time series
+corrleation between the lags
+
+differencing is used to make a time series stationary.
+Stationary time series is the one which has a mean value which is constant over a period of time. Variations are within a specific band.
+
+A: 3,5,8,11,10
+B: 2,3,3,1
+
+List B is List A after the first level of differencing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
